@@ -1,2 +1,3 @@
-vk_api
-python-dotenv
+vk-api==11.9.9
+python-dotenv==0.20.0
+yadisk==1.2.15
