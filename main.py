@@ -23,6 +23,7 @@ if VK_PASSWORD is None:
 if VK_ALBUM_URL is None:
     VK_ALBUM_URL = input("Введите url альбома: ")
 
+
 download_album(login=VK_LOGIN,
                password=VK_PASSWORD,
                album_url=VK_ALBUM_URL,

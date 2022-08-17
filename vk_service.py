@@ -17,14 +17,6 @@ def download_album(login: str, password: str, album_url: str, app_id: int):
     owner_id = album_url.split('/')[-1].split('_')[0].replace('album', '')
     photos_data = vk.photos.getAlbums(owner_id=owner_id, album_ids=album_id)
     photos_count = photos_data['items'][0]['size']
-    
-    
-    
-    photos_count -= 315
-    
-    
-    
-    
     if photos_count >= 1000:
         raise TooManyCount("Пока нельзя скачать фотографии из альбома, в котором больше 1000 фото")
     album_created_at = photos_data['items'][0]['created']
